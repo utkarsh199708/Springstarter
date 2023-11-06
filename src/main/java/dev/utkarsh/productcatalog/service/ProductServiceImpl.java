@@ -29,6 +29,7 @@ public class ProductServiceImpl implements ProductService{
         p.setPrice(pd.getPrice());
         p.setTitle(pd.getTitle());
         p.setDescription(pd.getDescription());
+        System.out.println("aa");
 
 
         return p;
