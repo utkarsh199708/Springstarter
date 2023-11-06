@@ -34,9 +34,9 @@ public class ProductController {
 
     }
     @PostMapping
-    public String createProduct()
+    public GenericProductDto  createProduct(@RequestBody GenericProductDto genericProductDto)
     {
-        return "Create a product with "+ UUID.randomUUID();
+        return productService.createProduct(genericProductDto);
 
     }
     @PutMapping("{id}")
